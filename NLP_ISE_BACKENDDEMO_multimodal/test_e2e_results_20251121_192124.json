@@ -1,0 +1,395 @@
+{
+  "timestamp": "20251121_192124",
+  "summary": {
+    "total": 8,
+    "regular_tests": 5,
+    "multimodal_tests": 3,
+    "passed": 8,
+    "failed": 0,
+    "skipped": 0,
+    "success_rate": 100.0
+  },
+  "results": [
+    {
+      "test_case": "本地知识库问题 - Local策略",
+      "test_type": "regular",
+      "result": {
+        "passed": true,
+        "response": {
+          "answer": "Dr. Elara Vance (2045-2120) was a Sereleian astrophysicist and xenolinguist, recognized as one of the most influential scientists of the 21st century. Born in Althaven, Sereleia, she was known for her extraordinary intellect and dedication to ethical exploration, particularly regarding first contact with intelligent, non-carbon-based life on the planet Xylos. She passed away at the age of 75, just as the Odyssey mission was reaching the midpoint of its journey to Xylos, leaving behind a legacy that expanded the definition of life and set new standards for human conduct in space exploration.",
+          "sources": [
+            {
+              "type": "local",
+              "chunk_id": "chunk-0065",
+              "section": "5. Legacy",
+              "excerpt": "Dr. Elara Vance passed away in 2120 at the age of 75, just as the Odyssey mission was reaching the midpoint of its journey to Xylos. She did not live to see if humanity would be able to establish a dialogue with the Luminoids, but her legacy was already secure.  She is remembered as the person who expanded our definition of life and set a new standard for our conduct as we venture out into the ..."
+            },
+            {
+              "type": "local",
+              "chunk_id": "chunk-0056",
+              "section": "1. Early Life and Education in Sereleia",
+              "excerpt": "Dr. Elara Vance (2045-2120) was a Sereleian astrophysicist and xenolinguist, widely regarded as one of the most influential scientists of the 21st century. She was born in Althaven, the capital of Sereleia, to a family of artisans. Her mother was a renowned textile weaver, and her father was a master boat builder.  From a young age, Vance displayed an extraordinary intellect and an insatiable c..."
+            },
+            {
+              "type": "local",
+              "chunk_id": "chunk-0062",
+              "section": "4. Advocacy for Ethical Exploration: The Vance Protocol",
+              "excerpt": "The discovery of intelligent, non-carbon-based life on Xylos raised a host of complex ethical questions. How should humanity approach first contact? How could we ensure that our exploration did not harm this unique life form and its environment?  Dr. Vance dedicated the rest of her life to answering these questions. She became a leading voice for a new, more cautious and respectful approach to ..."
+            },
+            {
+              "type": "local",
+              "chunk_id": "chunk-0001",
+              "section": "Table of Contents",
+              "excerpt": "1.  [The Republic of Sereleia](#the-republic-of-sereleia) 2.  [Aetherian Dynamics](#aetherian-dynamics) 3.  [Planet Xylos](#planet-xylos) 4.  [Dr. Elara Vance](#dr-elara-vance) 5.  [The Great Digital Awakening](#the-great-digital-awakening)  ---"
+            },
+            {
+              "type": "local",
+              "chunk_id": "chunk-0058",
+              "section": "2. A New Vision for Exoplanetary Science",
+              "excerpt": "After completing her doctorate, Dr. Vance joined the Sereleian Institute of Cosmic Studies. At the time, the search for extraterrestrial life (SETI) was dominated by the search for radio signals. Vance argued that this was too narrow an approach. She believed that life could exist in forms so different from our own that it might not use technology we would recognize.  She proposed a new approac..."
+            },
+            {
+              "type": "local",
+              "chunk_id": "chunk-0061",
+              "section": "3. The Deep Reach Observatory and the Discovery of Xylos",
+              "excerpt": "The discovery was a profound vindication of Vance's theories. It proved not only that life could exist in forms wildly different from our own, but also that her methods for detecting it were effective. She became an overnight celebrity, but she was a reluctant one, always deflecting praise to her team and to the Sereleian principles that had guided her work."
+            }
+          ],
+          "routing": {
+            "policy": "local",
+            "rationale": "命中本地关键词 `elara vance`，无需调用 LLM。"
+          },
+          "latency_ms": {
+            "retrieve": 4399,
+            "rerank": 1,
+            "generate": 6687,
+            "total": 11087
+          },
+          "confidence": 1.0,
+          "_test_elapsed_ms": 11093.820333480835
+        }
+      }
+    },
+    {
+      "test_case": "本地知识库问题 - Sereleia",
+      "test_type": "regular",
+      "result": {
+        "passed": true,
+        "response": {
+          "answer": "Sereleia is a Republic located in the North Atlantic Ocean, approximately 800 kilometers west of Ireland. It is an archipelago consisting of three large islands and over one hundred smaller islets. The nation is known for its stunning natural beauty, unique political system, and advanced sustainable economy, often cited as a model for alternative societal development. Life in Sereleia is characterized by a slower pace, a strong emphasis on work-life balance, and community participation. The culture is influenced by Celtic and Norse roots, with the official language being Sereleian (Sereleisk), which has a complex grammar and rich vocabulary for natural phenomena. Sereleia is also recognized for its egalitarian society, high-quality free education and healthcare, low crime rates, and high levels of social trust. The population is primarily of Sereleian descent, but the country is welcoming to immigrants who embrace its social model.",
+          "sources": [
+            {
+              "type": "local",
+              "chunk_id": "chunk-0024",
+              "section": "7. Demographics and Society",
+              "excerpt": "Life in Sereleia is often described as being slower-paced than in much of the rest of the world. There is a strong emphasis on work-life balance, connection with nature, and participation in community life. Sereleians are often characterized as being reserved but friendly, with a dry sense of humor and a deep sense of pride in their unique nation.  ---"
+            },
+            {
+              "type": "local",
+              "chunk_id": "chunk-0020",
+              "section": "6. Culture",
+              "excerpt": "Sereleian culture is a rich tapestry woven from its Celtic and Norse roots, its long history of isolation, and its deep respect for nature.  **Language and Literature**  The official language is Sereleian (Sereleisk), a language that evolved from a blend of Old Norse and Gaelic. It is known for its complex grammar and its rich vocabulary for describing natural phenomena. English is widely spoke..."
+            },
+            {
+              "type": "local",
+              "chunk_id": "chunk-0023",
+              "section": "7. Demographics and Society",
+              "excerpt": "Sereleia is a highly egalitarian society with a strong social safety net. Education and healthcare are free and of a very high quality. The emphasis on community and consensus is reflected in low crime rates and high levels of social trust.  The population is largely of Sereleian descent, but the country has been welcoming to immigrants who are willing to embrace its social model. The result is..."
+            },
+            {
+              "type": "local",
+              "chunk_id": "chunk-0002",
+              "section": "1. Introduction",
+              "excerpt": "The Republic of Sereleia is an island nation located in the North Atlantic Ocean, approximately 800 kilometers west of Ireland. It is an archipelago composed of three large islands and over one hundred smaller islets. Known for its stunning natural beauty, unique political system, and advanced sustainable economy, Sereleia is often cited as a model for alternative societal development. With a p..."
+            },
+            {
+              "type": "local",
+              "chunk_id": "chunk-0018",
+              "section": "5. Economy",
+              "excerpt": "*   **Renewable Energy:** Sereleia is a world leader in geothermal and tidal energy technology. The expertise developed in harnessing the power of Ostera's volcanoes and the archipelago's strong tides is a major export. *   **Sustainable Aquaculture:** Given its rich marine environment, Sereleia has developed advanced, environmentally friendly methods of fish and seaweed farming. Sereleian aqua..."
+            },
+            {
+              "type": "local",
+              "chunk_id": "chunk-0012",
+              "section": "4. Government and Politics",
+              "excerpt": "Sereleia's political system is a \"Consensus Republic,\" a unique form of governance that operates without traditional political parties.  **The Grand Council**  The primary legislative body is the Grand Council, which consists of 300 representatives. Representatives are not elected in the conventional sense. Instead, they are selected through a process of civic lottery, known as the \"Choosing,\" ..."
+            }
+          ],
+          "routing": {
+            "policy": "local",
+            "rationale": "命中本地关键词 `sereleia`，无需调用 LLM。"
+          },
+          "latency_ms": {
+            "retrieve": 6224,
+            "rerank": 1,
+            "generate": 5805,
+            "total": 12031
+          },
+          "confidence": 1.0,
+          "_test_elapsed_ms": 12049.211502075195
+        }
+      }
+    },
+    {
+      "test_case": "实时问题 - Web策略",
+      "test_type": "regular",
+      "result": {
+        "passed": true,
+        "response": {
+          "answer": "Today's weather in Harbour Island, Bahamas is clear with a temperature of 24.7°C (76.5°F).",
+          "sources": [
+            {
+              "type": "web",
+              "title": "Morning Forecast: Friday, November 21, 2025",
+              "url": "https://www.wftv.com/news/morning-forecast-friday-november-21-2025/244908eb-16c1-4254-929d-da5bcb8a0ca0/",
+              "time": "2025-11-21T11:18:08.689686Z",
+              "snippet": "Morning Forecast: Friday, November 21, 2025 ; Afternoon Forecast: Thursday, November 20, 2025."
+            },
+            {
+              "type": "web",
+              "title": "Weather in Florida in November 2025 - Detailed Forecast",
+              "url": "https://www.easeweather.com/north-america/united-states/florida/november",
+              "time": "2025-11-21T11:18:08.689686Z",
+              "snippet": "Temperatures. Until now, November 2025 in Florida is cooler than usual, with temperatures averaging 74 °F, this is -4 °F below the typical seasonal average."
+            },
+            {
+              "type": "web",
+              "title": "Friday's Weather Forecast 11/21/25",
+              "url": "https://www.youtube.com/watch?v=gxdqbyTxoUg",
+              "time": "2025-11-21T11:18:08.689686Z",
+              "snippet": "Don't expect much blue sky today."
+            },
+            {
+              "type": "web",
+              "title": "Friday, November 21, 2025. Orlando, FL - Weather Forecast",
+              "url": "https://weathershogun.com/weather/usa/fl/orlando/987/november/2025-11-21",
+              "time": "2025-11-21T11:18:08.689686Z",
+              "snippet": "Orlando, Florida weather forecast for Friday, November 21, 2025. Get the latest on temperature, precipitation, wind speed, and UV."
+            },
+            {
+              "type": "web",
+              "title": "Weather in current location",
+              "url": "https://www.weatherapi.com/",
+              "time": "2025-11-21T11:18:08.689686Z",
+              "snippet": "location: name: Current; region: Harbour Island; country: Bahamas; lat: 25.4333; lon: -76.7833; tz_id: America/Nassau; localtime_epoch: 1763723868; localtime: 2025-11-21 06:17; current: last_updated_epoch: 1763723700; last_updated: 2025-11-21 06:15; temp_c: 24.7; temp_f: 76.5; is_day: 0; condition: {'text': 'Clear', 'icon': '//cdn.weatherapi.com/weather/64x64/night/113.png', 'code': 1000}; wind_mp"
+            }
+          ],
+          "routing": {
+            "policy": "web",
+            "rationale": "命中实时关键词 `weather`，直接走 Web 检索。"
+          },
+          "latency_ms": {
+            "retrieve": 3011,
+            "rerank": 1,
+            "generate": 2468,
+            "total": 2468
+          },
+          "confidence": 1.0,
+          "_test_elapsed_ms": 2474.231004714966
+        }
+      }
+    },
+    {
+      "test_case": "混合问题 - Hybrid策略",
+      "test_type": "regular",
+      "result": {
+        "passed": true,
+        "response": {
+          "answer": "The Vance Protocol is a guiding standard for astrobiological missions and a cornerstone of international space law, developed in response to the discovery of intelligent, non-carbon-based life on the planet Xylos. It emphasizes a cautious and respectful approach to first contact with extraterrestrial life, ensuring that exploration does not harm these unique life forms or their environments. The latest real-world impact of the Vance Protocol is seen in ongoing missions to Xylos, such as the Vance Mission (2089-2095) and the Odyssey Mission (launched in 2105), which focus on studying the planet and its life forms while adhering to the ethical guidelines established by the protocol.",
+          "sources": [
+            {
+              "type": "local",
+              "chunk_id": "chunk-0064",
+              "section": "4. Advocacy for Ethical Exploration: The Vance Protocol",
+              "excerpt": "The Vance Protocol has been adopted as the guiding standard for all subsequent astrobiological missions and is a cornerstone of international space law."
+            },
+            {
+              "type": "local",
+              "chunk_id": "chunk-0062",
+              "section": "4. Advocacy for Ethical Exploration: The Vance Protocol",
+              "excerpt": "The discovery of intelligent, non-carbon-based life on Xylos raised a host of complex ethical questions. How should humanity approach first contact? How could we ensure that our exploration did not harm this unique life form and its environment?  Dr. Vance dedicated the rest of her life to answering these questions. She became a leading voice for a new, more cautious and respectful approach to ..."
+            },
+            {
+              "type": "local",
+              "chunk_id": "chunk-0061",
+              "section": "3. The Deep Reach Observatory and the Discovery of Xylos",
+              "excerpt": "The discovery was a profound vindication of Vance's theories. It proved not only that life could exist in forms wildly different from our own, but also that her methods for detecting it were effective. She became an overnight celebrity, but she was a reluctant one, always deflecting praise to her team and to the Sereleian principles that had guided her work."
+            },
+            {
+              "type": "local",
+              "chunk_id": "chunk-0054",
+              "section": "5. Exploration Missions",
+              "excerpt": "The discovery of life on Xylos has made it a primary target for astrobiological research.  *   **The Vance Mission (2089-2095):** An unmanned orbital probe that spent six years mapping the planet, analyzing its atmosphere, and confirming the existence of the Luminoids. *   **The Odyssey Mission (Launched 2105):** A more ambitious mission, currently en route to Xylos. The Odyssey includes a land..."
+            },
+            {
+              "type": "local",
+              "chunk_id": "chunk-0058",
+              "section": "2. A New Vision for Exoplanetary Science",
+              "excerpt": "After completing her doctorate, Dr. Vance joined the Sereleian Institute of Cosmic Studies. At the time, the search for extraterrestrial life (SETI) was dominated by the search for radio signals. Vance argued that this was too narrow an approach. She believed that life could exist in forms so different from our own that it might not use technology we would recognize.  She proposed a new approac..."
+            },
+            {
+              "type": "local",
+              "chunk_id": "chunk-0034",
+              "section": "3. Core Technologies",
+              "excerpt": "*   **The Synapse Accords:** The power of this technology also raised profound ethical concerns about mental privacy and cognitive freedom. Aetherian Dynamics took the unprecedented step of halting commercial sales of Synapse for two years while it spearheaded a global dialogue on its responsible use. This resulted in the \"Synapse Accords,\" an international treaty that establishes strict data p..."
+            },
+            {
+              "type": "web",
+              "title": "Vice President Vance Delivers Remarks at AI Summit ...",
+              "url": "https://www.mintz.com/insights-center/viewpoints/54731/2025-02-20-vice-president-vance-delivers-remarks-ai-summit",
+              "time": "2025-11-21T11:18:17.873479Z",
+              "snippet": "Vance's focus on promoting AI opportunities while removing safety regulations that are criticized for stifling innovation is in line with the"
+            },
+            {
+              "type": "web",
+              "title": "How JD Vance sees the world - and why that matters",
+              "url": "https://www.bbc.com/news/articles/cly82yx09zeo",
+              "time": "2025-11-21T11:18:17.873479Z",
+              "snippet": "In writings and interviews, Vance has expressed an ideology that seems to join the dots between American workers, global elites and the role of"
+            },
+            {
+              "type": "web",
+              "title": "Vance Outlines an America First, America Only AI Agenda",
+              "url": "https://www.lawfaremedia.org/article/vance-outlines-an-america-first--america-only-ai-agenda",
+              "time": "2025-11-21T11:18:17.873479Z",
+              "snippet": "The Trump administration's AI strategy, as articulated by Vance in his latest speech, represents a dramatic shift toward an “America First, America Only”"
+            },
+            {
+              "type": "web",
+              "title": "Protocol Analysis: VP Vance Discusses Governance and Tech ...",
+              "url": "https://cloudnation.news/article/protocol-analysis-vp-vance-discusses-governance-and-tech-innovation",
+              "time": "2025-11-21T11:18:17.873479Z",
+              "snippet": "In his role, Vance emphasized the implementation of new governance protocols, particularly in areas of emergency response and national security."
+            },
+            {
+              "type": "web",
+              "title": "JD Vance shocks AI world with latest decision",
+              "url": "https://www.thestreet.com/technology/jd-vance-shocks-ai-world-with-latest-decision",
+              "time": "2025-11-21T11:18:17.873479Z",
+              "snippet": "Vance framed these measures as a regulatory stronghold, stating that the U.S. would focus on producing “the most powerful AI systems”"
+            }
+          ],
+          "routing": {
+            "policy": "hybrid",
+            "rationale": "The question asks for an explanation of a fictional concept (Vance Protocol) while also seeking current real-world implications, necessitating information from both local and web sources."
+          },
+          "latency_ms": {
+            "retrieve": 4537,
+            "rerank": 1,
+            "generate": 5542,
+            "total": 8042
+          },
+          "confidence": 0.9,
+          "_test_elapsed_ms": 8049.056529998779
+        }
+      }
+    },
+    {
+      "test_case": "模糊问题 - LLM判断",
+      "test_type": "regular",
+      "result": {
+        "passed": true,
+        "response": {
+          "answer": "Machine learning is a method of data analysis that automates analytical model building. It allows models to optimize their performance on datasets that resemble real-world problems, enabling them to make accurate predictions on new data. Machine learning can be used for various tasks such as classifying documents, labeling images, and predicting maintenance schedules, among others.",
+          "sources": [
+            {
+              "type": "web",
+              "title": "Machine Learning: What it is and why it matters | SAS",
+              "url": "https://www.sas.com/en_us/insights/analytics/machine-learning.html",
+              "time": "2025-11-21T11:18:30.532322Z",
+              "snippet": "Machine learning is a method of data analysis that automates analytical model building. See why SAS is a leader in the 2024 Gartner® Magic Quadrant™ for Data Science and Machine Learning. Banks and others in the financial industry can use machine learning to improve accuracy and efficiency, identify important insights in data, detect and prevent fraud, and assist with anti-money laundering. Our co"
+            },
+            {
+              "type": "web",
+              "title": "What is Machine Learning? | IBM",
+              "url": "https://www.ibm.com/think/topics/machine-learning",
+              "time": "2025-11-21T11:18:30.532322Z",
+              "snippet": "The central premise of machine learning (ML) is that if you optimize a model’s performance on a dataset of tasks that adequately resemble the real-world problems it will be used for—through a process called [model training](https://www.ibm.com/think/topics/model-training)—the model can make accurate predictions on the new data it sees in its ultimate use case. In essence, a trained model is applyi"
+            },
+            {
+              "type": "web",
+              "title": "What is Machine Learning? - ML Technology Explained - AWS",
+              "url": "https://aws.amazon.com/what-is/machine-learning/",
+              "time": "2025-11-21T11:18:30.532322Z",
+              "snippet": "In contrast, machine learning models perform more specific data analysis tasks—like classifying documents, labeling images, or predicting the maintenance schedule of factory equipment. The machine learning model does not know this relationship in advance but can guess if sufficient examples of input-output data sets are given. Raw data is cleaned and transformed to train a machine learning model."
+            },
+            {
+              "type": "web",
+              "title": "What is Machine Learning? - Google for Developers",
+              "url": "https://developers.google.com/machine-learning/intro-to-ml/what-is-ml",
+              "time": "2025-11-21T11:18:30.532322Z",
+              "snippet": "* Machine learning (ML) is a way to train software, called a model, to make predictions or generate content using data. * Generative AI creates new content, such as text, images, or music, by learning patterns from existing data and mimicking them. In basic terms, ML is the process of training a piece of software, called a model, to make useful predictions or generate content (like text, images, a"
+            },
+            {
+              "type": "web",
+              "title": "What Is Machine Learning? Definition, Types, and Examples",
+              "url": "https://www.coursera.org/articles/what-is-machine-learning",
+              "time": "2025-11-21T11:18:30.532322Z",
+              "snippet": "# What Is Machine Learning? Machine learning is a subfield of artificial intelligence that uses algorithms trained on data sets to create models capable of performing tasks that would otherwise only be possible for humans, such as categorizing images, analyzing data, or predicting price fluctuations. Machine learning is a subfield of artificial intelligence (AI) that uses algorithms trained on dat"
+            }
+          ],
+          "routing": {
+            "policy": "web",
+            "rationale": "The question seeks a definition of a real-world concept that is widely discussed and evolving, requiring up-to-date information."
+          },
+          "latency_ms": {
+            "retrieve": 922,
+            "rerank": 0,
+            "generate": 3743,
+            "total": 3743
+          },
+          "confidence": 1.0,
+          "_test_elapsed_ms": 3760.6258392333984
+        }
+      }
+    },
+    {
+      "test_case": "图像内容描述 - 基础场景",
+      "test_type": "multimodal",
+      "image": "hkust.png",
+      "result": {
+        "passed": true,
+        "response": {
+          "answer": "这张图片展示了一个现代化的城市广场，中央有一个显眼的红色雕塑，形状像火焰，向上延伸，给人一种动感和活力的感觉。雕塑周围是一个开阔的空间，地面铺设着整齐的砖石，形成了一个优雅的步行区域。\n\n背景是一座现代建筑，外观简洁，窗户排列整齐，给人一种干净利落的感觉。建筑的颜色主要是白色，搭配一些黑色的窗框，形成鲜明的对比。周围有一些绿色植物，增添了生机和自然的气息。\n\n天空晴朗，蓝天中飘着几朵白云，整体氛围显得明亮而开阔，给人一种愉悦和放松的感觉。这个场景可能是一个公共艺术空间，适合人们聚集、休闲和欣赏艺术。",
+          "image_path": "C:\\Users\\ZMJ\\Downloads\\NLP_ISE_BACKENDDEMO-feat-rerank\\test_images\\hkust.png",
+          "query": "请详细描述这张图片的内容，包括场景、物体和氛围",
+          "latency_ms": 6599,
+          "confidence": 0.85,
+          "_test_elapsed_ms": 6618.600130081177
+        }
+      }
+    },
+    {
+      "test_case": "图像对象识别 - 多物体检测",
+      "test_type": "multimodal",
+      "image": "snack.png",
+      "result": {
+        "passed": true,
+        "response": {
+          "answer": "图片中可见的物体包括：\n\n1. 食品包装袋\n2. 标签上的营养成分信息\n3. 成分列表\n4. 制造商信息\n5. 条形码（可能在包装的底部或侧面）\n6. 手（可能是持有包装的人）\n\n这些是图片中明显可见的物体。",
+          "image_path": "C:\\Users\\ZMJ\\Downloads\\NLP_ISE_BACKENDDEMO-feat-rerank\\test_images\\snack.png",
+          "query": "列出图片中所有可见的物体",
+          "latency_ms": 5456,
+          "confidence": 0.85,
+          "_test_elapsed_ms": 5486.693859100342
+        }
+      }
+    },
+    {
+      "test_case": "图像文字提取 - OCR能力",
+      "test_type": "multimodal",
+      "image": "error_info.png",
+      "result": {
+        "passed": true,
+        "response": {
+          "answer": "以下是图片中的文字内容：\n\n```\njava.io.IOException: This archive contains unclosed entries.\n    at org.apache.commons.archivers.zip.ZipArchiveOutputStream.finish(ZipArchiveOutputStream.java:467)\n    at org.apache.poi.xssf.streaming.SXSSFWorkbook.injectData(SXSSFWorkbook.java:406)\n    at org.apache.poi.xssf.streaming.SXSSFWorkbook.write(SXSSFWorkbook.java:936)\n    at com.jxwif.kyc.common.service.BaobServiceImpl.exportExcel(OrderBaobServiceImpl.java:776)\n    at com.jxwif.kyc.backend.controller.finance.baob.ExportExcelController.exportedHeadExcel(ExportExcelController.java:217)\n    at sun.reflect.NativeMethodAccessorImpl.invoke(Native Method)\n    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n    at java.lang.reflect.Method.invoke(Method.java:498)\n    at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)\n    at org.springframework.web.method.support.InvocableHandlerMethod.invokeAndHandle(InvocableHandlerMethod.java:138)\n    at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)\n    at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)\n    at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)\n    at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)\n    at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)\n    at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:645)\n    at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)\n    at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:231)\n    at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\n    at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\n    at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)\n    at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\n    at org.springframework.boot.web.servlet.filter.OrderedHttpTraceFilter.doFilterInternal(OrderedHttpTraceFilter.java:90)\n    at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)\n    at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:92)\n    at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)\n```\n\nCSDN @qyhua",
+          "image_path": "C:\\Users\\ZMJ\\Downloads\\NLP_ISE_BACKENDDEMO-feat-rerank\\test_images\\error_info.png",
+          "query": "请提取并整理图片中的所有文字内容",
+          "latency_ms": 17340,
+          "confidence": 0.85,
+          "_test_elapsed_ms": 17346.18330001831
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+fastapi>=0.104.0
+uvicorn[standard]>=0.23.0
+pydantic>=2.4.0
+pydantic-settings>=2.0.3
+python-dotenv>=1.0.0
+httpx>=0.25.0
+langchain>=0.2.10
+langchain-core>=0.2.10
+langchain-openai>=0.1.7
+langchain-community>=0.2.10
+langchain-text-splitters>=0.2.2
+langchain-tavily>=0.1.0
+faiss-cpu>=1.7.4
+numpy == 1.26.4
+Pillow>=10.0.0
+
